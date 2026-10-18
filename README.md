@@ -4,7 +4,7 @@ A news-first AI newsroom for everyday people.
 
 ## Agent prompts
 
-Each newsroom role is a system prompt in `prompts/`. A story moves through them in this order:
+Each newsroom role is a persona prompt in `personas/`. A story moves through them in this order:
 
 1. `wire_desk.md`: clusters and labels the raw wire
 2. `assignment_editor.md`: picks what the edition covers
@@ -15,4 +15,4 @@ Each newsroom role is a system prompt in `prompts/`. A story moves through them 
 7. `columnist.md`: Norm, who writes the take box
 8. `format_desk.md`: packages approved stories for email, blog, and video
 
-Every prompt expects `charter/rules.md` (and most expect `charter/where_we_stand.md`) to be appended below it.
+Every persona expects `charter/rules.md` (and most expect `charter/where_we_stand.md`) to be appended below it.
